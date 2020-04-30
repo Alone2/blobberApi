@@ -7,15 +7,15 @@ class BlobberServerError(Exception):
     pass
 
 class Connection:
-    def __init__(self, key):
-        self.key = key
+    def __init__(self, token):
+        self.key = token
         self.url = "https://preview.blobber.ch/Blobdoge/"
-    
+
     # returns Payment Object: address to pay to
     def createPurchase(self, price):
         address = self.createAddress()
         return Purchase(price, self, address)
-    
+
     # Returns a Payment Object with existing address
     # Address needs be a dogecoin address created with blobber
     # It is *NOT* recommended to use this method
@@ -23,12 +23,13 @@ class Connection:
         return Purchase(price, self, address)
 
     # Creates Dogecoin address
-    # It is *NOT* recommended to use this method 
+    # It is *NOT* recommended to use this method
     # but rather to use createPurchase which creates a Purchase object with a newly generated address.
     def createAddress(self):
         # generate address
-        url = self.url + "devNewAddress?devtoken=" + self.key
-        r = requests.get(url, verify=False).text
+        url = self.url + "devNewAddress"
+        mydat = {'devtoken': self.key}
+        r = requests.post(url, verify=False, data=mydat).text
         js = json.loads(r)
 
         if js["error"] != "none":
@@ -53,14 +54,15 @@ class Purchase:
 
     # Executes a function when payment is receive
     # function needs to have 1 argument (uesed to pass the Payment object)
-    def executeOnComplete(self, func): 
-        th = threading.Thread(target=self.__waitForPayment, args=(self,func))
+    def executeOnComplete(self, func):
+        th = threading.Thread(target=self.__waitForPayment, args=(self, func))
         th.start()
 
     # refeshes paidBalance, paymentComplete, paidBalanceUnconfirmed and paymentCompleteUnconfirmed
     def refresh(self):
-        url = self.con.url + "devInfoAddress?devtoken=" + self.con.key + "&address=" + self.address
-        r = requests.get(url, verify=False).text
+        url = self.con.url + "devInfoAddress"
+        mydat = {'devtoken': self.con.key, 'address': self.address}
+        r = requests.post(url, verify=False, data=mydat).text
         js = json.loads(r)
 
         if js["error"] != "none":
@@ -74,8 +76,8 @@ class Purchase:
 
         if self.paidBalanceUnconfirmed >= self.price:
             self.paymentCompleteUnconfirmed = True
-    
-    @staticmethod 
+
+    @staticmethod
     def __waitForPayment(payment, func):
         while not payment.paymentComplete:
             time.sleep(20)

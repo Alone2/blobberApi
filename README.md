@@ -2,14 +2,14 @@
 
 
 ## Inhaltsverzeichnis
-1. [Was ist blobberApi](#exp)
+1. [Was ist blobberApi?](#exp)
 1. [Warum funktioniert blobberApi nicht?](#why)
 1. [Installation](#installation)
 1. [Erste Schritte](#steps)
 1. [Blobber Dev-Token](#key)
 1. [Ist Blobber sicher?](#security)
 
-## Was ist blobberApi / Blobber <a name="exp"></a>
+## Was ist blobberApi / Blobber? <a name="exp"></a>
 Wichtig: Blobber und blobberApi ist nur für Testzwecke und das Kennenlernen von Kryptowährungen geeignet.
 
 Mit blobberApi und Blobber ist es möglich, ganz einfach ein Dogecoin Zahlungssystem mit Python zu erstellen.

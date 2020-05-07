@@ -10,7 +10,8 @@ def functionAfterSuccessfulTransaction(payment):
 
 # Eine Verbindung mit Blobber wird initialisiert
 # Wie erstellt man einen Blobber Dev-Token? -> https://github.com/Alone2/blobberApi#key
-myConnection = blobber.Connection("DEIN BLOBBER DEV TOKEN")
+# myConnection = blobber.Connection("DEIN BLOBBER DEV TOKEN")
+myConnection = blobber.Connection("IeAn0YhzZXOJv5TkU76kRjWe1O6kmxyrHxXGdiccnVxnr5GStS")
 
 # Nutzer wird gebeten einzugeben, wie viel Geld (Dogecoin) eingezahlt werden sollte.
 requestPrice = int( input("Wie viele Dogecoin sollten eingezahlt werden? ") )
@@ -19,8 +20,8 @@ requestPrice = int( input("Wie viele Dogecoin sollten eingezahlt werden? ") )
 payment = myConnection.createPurchase(requestPrice)
 
 # Die Adresse sowie die die Anzahl Dogecoin, welche eingezahlt werden soll, wird angezeigt
-print(payment.address)
-print(payment.price)
+print("Zahle an diese Dogecoin addresse: ", payment.address)
+print("Anzahl Dogecoin: ", payment.price)
 
 # Wir definieren, dass die Funktion functionAfterSuccessfulTransaction 
 # nach erfolgreicher Einzahlung ausgeführt wird.

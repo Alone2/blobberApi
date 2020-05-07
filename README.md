@@ -7,6 +7,9 @@
 1. [Installation](#installation)
 1. [Erste Schritte](#steps)
 1. [Blobber Dev-Token](#key)
+1. [Wie Dogecoin mit Blobber?](#dog)
+1. [Warnung wärend Verwenden von blobbApi](#war)
+1. [BlobberServerError](#bse)
 1. [Ist Blobber sicher?](#security)
 
 ## Was ist blobberApi / Blobber? <a name="exp"></a>
@@ -34,6 +37,23 @@ Beispiele zur Verwendung der Library sind im 'examples' Ordner zu finden.
 1. Gehe auf [blobber.ch](https://blobber.ch), logge dich ein, oder registriere dich.
 1. Wenn angemeldet, klicke oben bei 'Upload', 'Send' und 'Other' auf 'Other'. 
 1. Unten auf diesem Tab ist der Dev-Token notiert.
+
+## Wie sende ich Geld an eine Dogecoin Adresse mit Blobber? <a name="dog"></a>
+Es ist möglich eine normale Dogecoin Wallet zu verwenden. Man sendet die Dogecoin einfach an die gegebene Adresse.
+
+Die Alternative ist, Dogecoin auf [Blobber](blobber.ch) hochzuladen und so Transaktionen durchzuführen. 
+Das hat den Vorteil, dass keine Gebühr für die Transaktion bezahlt werden muss, falls der Empfänger Blobber verwendet.
+
+
+## Warnungen werden angezeigt, wenn ich die blobberApi brauche. Was bedeutet das? <a name="war"></a>
+Es kann sein, dass Warnungen wie "InsecureRequestWarning" wärend dem Benutzen von bloberApi angezeigt werden. 
+Das ist normal, zeigt aber jedoch auf, dass die Sicherheitsstandarts von Blobber nicht unbedingt den besten entsprechen.
+
+### Bedeutet das, dass Blobber unsicher ist?
+Ja. Siehe [hier](#security)
+
+## Bei mir erscheint der BlobberServerError, was heisst das?  <a name="bse"></a>
+Entweder wurde der Blobber Dev Token nicht richtig eingegeben (siehe [hier](#key)), oder es ga einen Fehler auf dem Blobber Server.
 
 ## Ist Blobber sicher? <a name="security"></a>
 [Nein](https://blobber.ch#news-BenutzenSieBlobberundDogecoinalsZahlungsmittelaufIhrerWebseite)

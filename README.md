@@ -3,7 +3,6 @@
 
 ## Inhaltsverzeichnis
 1. [Was ist blobberApi?](#exp)
-1. [Warum funktioniert blobberApi nicht?](#why)
 1. [Installation](#installation)
 1. [Erste Schritte](#steps)
 1. [Blobber Dev-Token](#key)
@@ -16,9 +15,6 @@
 Wichtig: Blobber und blobberApi ist nur für Testzwecke und das Kennenlernen von Kryptowährungen geeignet.
 
 Mit blobberApi und Blobber ist es möglich, ganz einfach ein Dogecoin Zahlungssystem mit Python zu erstellen.
-
-## Warum funktioniert blobberApi nicht? <a name="why"></a>
-Ich habe das Modul noch nie getestet.
 
 ## Installieren <a name="installation"></a>
 Clone dieses git repo und installiere das Modul mit pip:
@@ -41,7 +37,7 @@ Beispiele zur Verwendung der Library sind im 'examples' Ordner zu finden.
 ## Wie sende ich Geld an eine Dogecoin Adresse mit Blobber? <a name="dog"></a>
 Es ist möglich eine normale Dogecoin Wallet zu verwenden. Man sendet die Dogecoin einfach an die gegebene Adresse.
 
-Die Alternative ist, Dogecoin auf [Blobber](blobber.ch) hochzuladen und so Transaktionen durchzuführen. 
+Die Alternative ist, Dogecoin auf [Blobber](https://blobber.ch) hochzuladen und so Transaktionen durchzuführen. 
 Das hat den Vorteil, dass keine Gebühr für die Transaktion bezahlt werden muss, falls der Empfänger Blobber verwendet.
 
 
@@ -49,7 +45,8 @@ Das hat den Vorteil, dass keine Gebühr für die Transaktion bezahlt werden muss
 Es kann sein, dass Warnungen wie "InsecureRequestWarning" wärend dem Benutzen von bloberApi angezeigt werden. 
 Das ist normal, zeigt aber jedoch auf, dass die Sicherheitsstandarts von Blobber nicht unbedingt den besten entsprechen.
 
-### Bedeutet das, dass Blobber unsicher ist?
+Bedeutet das nun, dass Blobber unsicher ist?
+
 Ja. Siehe [hier](#security)
 
 ## Bei mir erscheint der BlobberServerError, was heisst das?  <a name="bse"></a>

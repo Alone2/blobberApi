@@ -7,7 +7,7 @@
 1. [Erste Schritte](#steps)
 1. [Blobber Dev-Token](#key)
 1. [Wie Dogecoin mit Blobber?](#dog)
-1. [Warnung wärend Verwenden von blobbApi](#war)
+1. [Warnung wärend Verwenden von blobberApi](#war)
 1. [BlobberServerError](#bse)
 1. [Ist Blobber sicher?](#security)
 

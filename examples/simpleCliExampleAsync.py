@@ -10,8 +10,7 @@ def functionAfterSuccessfulTransaction(payment):
 
 # Eine Verbindung mit Blobber wird initialisiert
 # Wie erstellt man einen Blobber Dev-Token? -> https://github.com/Alone2/blobberApi#key
-# myConnection = blobber.Connection("DEIN BLOBBER DEV TOKEN")
-myConnection = blobber.Connection("IeAn0YhzZXOJv5TkU76kRjWe1O6kmxyrHxXGdiccnVxnr5GStS")
+myConnection = blobber.Connection("DEIN BLOBBER DEV TOKEN")
 
 # Nutzer wird gebeten einzugeben, wie viel Geld (Dogecoin) eingezahlt werden sollte.
 requestPrice = int( input("Wie viele Dogecoin sollten eingezahlt werden? ") )

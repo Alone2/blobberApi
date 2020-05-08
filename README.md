@@ -38,7 +38,7 @@ Beispiele zur Verwendung der Library sind im 'examples' Ordner zu finden.
 Es ist möglich eine normale Dogecoin Wallet zu verwenden. Man sendet die Dogecoin einfach an die gegebene Adresse.
 
 Die Alternative ist, Dogecoin auf [Blobber](https://blobber.ch) hochzuladen und so Transaktionen durchzuführen. 
-Das hat den Vorteil, dass keine Gebühr für die Transaktion bezahlt werden muss, falls der Empfänger Blobber verwendet.
+Das hat den Vorteil, dass keine Gebühr für die Transaktion anfällt, falls der Sender und Empfänger beide Blobber verwendet.
 
 
 ## Warnungen werden angezeigt, wenn ich die blobberApi brauche. Was bedeutet das? <a name="war"></a>

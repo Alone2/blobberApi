@@ -42,7 +42,7 @@ Das hat den Vorteil, dass keine Gebühr für die Transaktion anfällt, falls der
 
 
 ## Warnungen werden angezeigt, wenn ich die blobberApi brauche. Was bedeutet das? <a name="war"></a>
-Es kann sein, dass Warnungen wie "InsecureRequestWarning" wärend dem Benutzen von bloberApi angezeigt werden. 
+Es kann sein, dass Warnungen wie "InsecureRequestWarning" während dem Benutzen von blobberApi angezeigt werden. 
 Das ist normal, zeigt aber jedoch auf, dass die Sicherheitsstandarts von Blobber nicht unbedingt den besten entsprechen.
 
 Bedeutet das nun, dass Blobber unsicher ist?
